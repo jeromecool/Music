@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <!--reference-->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            <li class="breadcrumb-item"><a href="">Accueil/</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact/</li>
         </ol>
     </nav>
+    <!-- section contact -->
+
+    <form class="container">
+        <div class="form-row">
+            <div class="col-md-12">
+                <h2>contacter-nous</h2>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="nom">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="prénom">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="email">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="mots de passe">
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="form-row">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Préférence de genre</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>choisisez un genre</option>
+                        <option value="1">shonen</option>
+                        <option value="2">seinen</option>
+                        <option value="3">shôjo</option>
+                    </select>
+
+                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                    <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary my-1">envoyer</button>
+    </form>
+    <!-- / section contact -->
 </body>
 
 </html>
